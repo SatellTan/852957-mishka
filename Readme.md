@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Татьяна Кузнецова](https://up.htmlacademy.ru/adaptive/15/user/852957).
-* Наставник: `Неизвестно`.
+* Наставник: Дмитрий Походня.
 
 ---
 
