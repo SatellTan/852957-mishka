@@ -3,28 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Mishka shop">
-      </a>
-      <nav class="main-nav">
+      <div class="page-header__logo-block">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Mishka shop">
+        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
+      </div>
+      <nav class="main-nav">
         <div class="wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a href="form.html">Вязание на заказ</a>
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="site-list__item--search" >
-              <a href="#">Поиск по сайту</a>
+              <a class="site-list__link" href="#">Поиск по сайту</a>
             </li>
             <li class="site-list__item--basket">
-              <a href="#">Корзина:
+              <a class="site-list__link" href="#">Корзина:
                 <span class="basket-status"> пока пуста</span>
               </a>
             </li>

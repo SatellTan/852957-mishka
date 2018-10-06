@@ -1,0 +1,37 @@
+.contacts__title {
+  @include font-options(18px, 30px, 700, #000000, none);
+  margin: 38px 34px 30px 30px;
+}
+
+.contacts__list {
+  @include font-options(15px, 30px, 400, rgb(68, 68, 68), none);
+  margin: 30px 30px 30px 30px;
+}
+
+.contacts__email {
+  @include font-options(17px, 30px, 400, rgb(68, 68, 68), none);
+  text-decoration : underline;
+  text-decoration-color : $tiffany-color;
+  &:hover,
+  &:focus {
+    color: rgba(70, 193, 174, 1);
+    text-decoration-color : rgba(70, 193, 174, 1);
+  }
+  &:active {
+    color: rgba(70, 193, 174, 0.3);
+    text-decoration-color : rgba(70, 193, 174, 0.3);
+  }
+}
+
+.contacts__map {
+  margin: 0 30px;
+}
+
+.contacts__write-us {
+  display: block;
+  margin: 40px 40px 30px 30px;
+  padding: 15px 30px;
+  border: 2px solid rgb(68, 68, 68);
+  text-decoration: none;
+  @include font-options(18px, 20px, 700, #000000, none);
+}

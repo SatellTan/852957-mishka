@@ -1,0 +1,52 @@
+.product-week__name {
+  @include font-options(25px, 30px, 700, #000000, none);
+  margin: 34px 5px 30px 30px;
+}
+
+.product-week__title {
+  @include font-options(17px, 20px, 700, $tiffany-color, none);
+  margin: 10px 10px 30px 30px;
+}
+
+.product-week__description {
+  @include font-options(15px, 24px, 400, #000000, none);
+  margin: 26px 5px 30px 30px;
+}
+
+.product-week__list {
+  @include font-options(15px, 20px, 400, #000000, none);
+  margin: 22px 10px 30px 30px;
+}
+
+.product-week__description {
+  @include font-options(15px, 24px, 400, #000000, none);
+  margin: 26px 10px 30px 30px;
+}
+
+.product-week__photo {
+  margin: 0 30px;
+}
+
+.product-week__price {
+  @include font-options(17px, 24px, 700, #000000, none);
+  margin: 25px 30px;
+}
+
+.product-week__order {
+  display: block;
+  margin: 0 30px;
+  padding: 15px 30px;
+  border: 2px solid rgb(68, 68, 68);
+  text-decoration: none;
+  @include font-options(17px, 20px, 700, #000000, none);
+  &:hover,
+  &:focus {
+    background-color: rgb(68, 68, 68);
+    color: rgba(255, 255, 255, 1);
+  }
+  &:active {
+    background-color: rgb(68, 68, 68);
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+

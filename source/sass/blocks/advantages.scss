@@ -1,0 +1,13 @@
+.advantages__title {
+  @include font-options(25px, 30px, 700, #000000, none);
+  margin: 30px 25px 30px 30px;
+}
+
+.advantages__list {
+  list-style: none;
+}
+
+.advantages__item {
+  @include font-options(17px, 20px, 700, #000000, none);
+  margin: 30px 25px 30px 30px;
+}

@@ -1,0 +1,16 @@
+.page-footer {
+  background-color: rgb(241, 241, 241);
+}
+
+.social__list {
+  list-style: none;
+}
+
+.social__link {
+  text-decoration : none;
+}
+
+.copyright__text {
+  @include font-options(19px, 18px, 700, #000000, none);
+  margin: 26px 28px 30px 30px;
+}

@@ -1,0 +1,30 @@
+$tiffany-color: rgba(99, 209, 187, 1);/*#63d1bb*/
+$light-tiffany-color: rgba(99, 209, 187, 0.3);
+$dark-grey-color: rgba(0, 0, 0, 0.6);
+$light-grey-color: rgba(0, 0, 0, 0.3);
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts//opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts//opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body{
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+@mixin font-options ($font-size: 17px, $line-height: 24px, $font-weight: 700, $color: #000000, $text-transform: none) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+  text-transform: $text-transform;
+}
