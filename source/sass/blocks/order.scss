@@ -1,0 +1,12 @@
+.order__title {
+  background-color: rgb(241, 241, 241);
+
+  @include font-options(27px, 30px, 700, #000000, none);
+  padding: 70px 30px;
+  margin: 0 30px;
+}
+
+.order__invite {
+  @include font-options(13px, 24px, 400, rgb(68, 68, 68), none);
+  margin: 24px 30px 20px 30px;
+}

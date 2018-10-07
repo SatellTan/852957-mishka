@@ -3,28 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Mishka shop">
-      </a>
-      <nav class="main-nav">
+      <div class="page-header__logo-block">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Mishka shop">
+        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
+      </div>
+      <nav class="main-nav">
         <div class="wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="site-list__item--search" >
-              <a href="#">Поиск по сайту</a>
+              <a class="site-list__link" href="#">Поиск по сайту</a>
             </li>
             <li class="site-list__item--basket">
-              <a href="#">Корзина:
+              <a class="site-list__link" href="#">Корзина:
                 <span class="basket-status"> пока пуста</span>
               </a>
             </li>
@@ -39,24 +42,30 @@
         <div class="wrapper">
           <ul class="catalog__list">
             <li class="catalog__item">
-              <img src="http://placehold.it/150x100" alt="Фотография товара">
-              <p class="catalog__name">Зайчик-попрыгайчик</p>
-              <p class="catalog__description">Рост 30 см, вес 200 г</p>
-              <p class="catalog__price">1 200 руб.</p>
+              <img src="../img/photo-hare-mobile@1x.jpg" alt="Фотография товара">
+              <div class="catalog__info">
+                <p class="catalog__name">Зайчик-попрыгайчик</p>
+                <p class="catalog__description">Рост 30 см, вес 200 г</p>
+                <p class="catalog__price">1 200 руб.</p>
+              </div>
             </li>
 
             <li class="catalog__item">
-              <img src="http://placehold.it/150x100" alt="Фотография товара">
-              <p class="catalog__name">Корзинка для белья</p>
-              <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
-              <p class="catalog__price">690 руб.</p>
+              <img src="../img/photo-bowl-mobile@1x.jpg" alt="Фотография товара">
+              <div class="catalog__info">
+                <p class="catalog__name">Корзинка для белья</p>
+                <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
+                <p class="catalog__price">690 руб.</p>
+              </div>
             </li>
 
             <li class="catalog__item">
-              <img src="http://placehold.it/150x100" alt="Фотография товара">
-              <p class="catalog__name">Большая корзинка для игрушек</p>
-              <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
-              <p class="catalog__price">1 500 руб.</p>
+              <img src="../img/photo-toys-mobile@1x.jpg" alt="Фотография товара">
+              <div class="catalog__info">
+                <p class="catalog__name">Большая корзинка для игрушек</p>
+                <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+                <p class="catalog__price">1 500 руб.</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -64,12 +73,14 @@
 
       <div class="making">
         <div class="wrapper">
-          <div class="making__title">
-            <p class="making__title-text">Процесс производства</p>
+          <div class="making__info">
+            <div class="making__title">
+              <p class="making__title-text">Процесс производства</p>
+            </div>
+            <img src="../img/video-mobile@1x.jpg" alt="Видео процесса производства">
+            <p class="making__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="making__order button" href="form.html">СДЕЛАТЬ ЗАКАЗ</a>
           </div>
-          <img src="http://placehold.it/150x100" alt="Видео процесса производства">
-          <p class="making__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="making__order button" href="form.html">ЗАКАЗАТЬ</a>
         </div>
       </div>
     </main>
