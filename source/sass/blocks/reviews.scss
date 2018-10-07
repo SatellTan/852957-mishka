@@ -28,5 +28,6 @@
   padding: 15px 30px;
   border: 2px solid rgb(68, 68, 68);
   text-decoration: none;
+
   @include font-options(18px, 20px, 700, #000000, none);
 }

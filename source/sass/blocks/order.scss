@@ -1,5 +1,6 @@
 .order__title {
   background-color: rgb(241, 241, 241);
+
   @include font-options(27px, 30px, 700, #000000, none);
   padding: 70px 30px;
   margin: 0 30px;

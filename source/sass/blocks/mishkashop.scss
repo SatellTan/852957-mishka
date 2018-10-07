@@ -22,15 +22,18 @@
   margin: 0 30px;
   padding: 29px 30px;
   text-decoration: none;
+
   @include font-options(20px, 30px, 700, #ffffff, none);
 }
 
 .mishkashop__link--interior {
   background-color: $tiffany-color;
+
   &:hover,
   &:focus {
     background-color: rgb(89, 213, 188);
   }
+
   &:active {
     background-color: rgb(89, 213, 188);
     color: rgba(255, 255, 255, 0.3);
@@ -39,10 +42,12 @@
 
 .mishkashop__link--toys {
   background-color: rgb(86, 195, 178);
+
   &:hover,
   &:focus {
     background-color: rgb(70, 193, 174);
   }
+
   &:active {
     background-color: rgb(70, 193, 174);
     color: rgba(255, 255, 255, 0.3);

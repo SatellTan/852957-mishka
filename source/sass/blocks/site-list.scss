@@ -1,16 +1,18 @@
 .site-list {
   list-style: none;
   padding: 0;
-  margin:0 ;
+  margin: 0;
 }
 
 .site-list__link {
   @include font-options(17px, 24px, 700, #000000, none);
   text-decoration: none;
+
   &:hover,
   &:focus {
     color: $dark-grey-color;
   }
+
   &:active {
     color: $light-grey-color;
   }

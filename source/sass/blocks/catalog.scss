@@ -1,5 +1,6 @@
 .catalog__title {
   background-color: rgb(241, 241, 241);
+
   @include font-options(27px, 30px, 700, #000000, none);
   padding: 70px 30px;
   margin: 0 30px;
@@ -16,15 +17,19 @@
 
 .catalog__info {
   border: 1px solid rgb(236, 236, 236);
+
   &:hover,
   &:focus {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+
     .catalog__name {
       @include font-options(17px, 24px, 700, $dark-grey-color, none);
     }
   }
+
   &:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+
     .catalog__name {
       @include font-options(17px, 24px, 700, $light-grey-color, none);
     }

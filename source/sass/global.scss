@@ -17,8 +17,8 @@ $light-grey-color: rgba(0, 0, 0, 0.3);
   font-style: normal;
 }
 
-body{
-  font-family: "Open Sans", Arial, sans-serif;
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 @mixin font-options ($font-size: 17px, $line-height: 24px, $font-weight: 700, $color: #000000, $text-transform: none) {
