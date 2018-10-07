@@ -38,7 +38,7 @@
   padding: 15px 30px;
   border: 2px solid rgb(68, 68, 68);
   text-decoration: none;
-  @include font-options(17px, 20px, 700, #000000, none);
+  @include font-options(17px, 20px, 700, rgb(68, 68, 68), none);
   &:hover,
   &:focus {
     background-color: rgb(68, 68, 68);

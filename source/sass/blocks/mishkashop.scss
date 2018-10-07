@@ -5,6 +5,7 @@
   background-position: 50% 50%;
   height: 283px;
   padding: 75px 0 30px 30px;
+  margin: 0 30px;
 }
 
 .mishkashop__title {
@@ -13,10 +14,12 @@
 
 .mishkashop__list {
   list-style: none;
+  padding: 0;
 }
 
 .mishkashop__link {
   display: block;
+  margin: 0 30px;
   padding: 29px 30px;
   text-decoration: none;
   @include font-options(20px, 30px, 700, #ffffff, none);

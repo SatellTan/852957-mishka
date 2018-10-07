@@ -5,7 +5,7 @@
 
 .reviews__text {
   @include font-options(15px, 30px, 400, #000000, none);
-  margin: 20px 20px 30px 30px;
+  margin: 20px 30px 20px 30px;
 }
 
 .reviews__author-name {
@@ -16,6 +16,10 @@
 .reviews__author-nikname {
   @include font-options(17px, 30px, 400, #000000, none);
   margin: 5px 20px 30px 30px;
+}
+
+.reviews__prev {
+  margin-left: 30px;
 }
 
 .reviews__write {

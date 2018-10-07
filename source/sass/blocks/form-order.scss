@@ -1,0 +1,47 @@
+.form-order__title {
+  @include font-options(17px, 16px, 700, $tiffany-color, none);
+  margin: 20px 30px;
+}
+
+.form-order__type,
+.form-order__color,
+.form-order__name,
+.form-order__surname,
+.form-order__middle-name,
+.form-order__phone,
+.form-order__email,
+.form-order__additionally {
+  @include font-options(17px, 18px, 700, #000000, none);
+  margin: 20px 30px;
+}
+
+.form-order__item {
+  @include font-options(17px, 18px, 400, rgba(68, 68, 68, 0.3), none);
+}
+
+.form-order__item--additionally {
+  padding: 10px;
+}
+
+.form-order__required-fields {
+  @include font-options(14px, 16px, 400, rgb(68, 68, 68), none);
+  margin: 0 30px;
+}
+
+.form-order__send {
+  display: block;
+  margin: 30px 30px 55px 30px;
+  padding: 15px 30px;
+  border: 2px solid rgb(68, 68, 68);
+  background-color: #ffffff;
+  @include font-options(17px, 16px, 700, rgb(68, 68, 68), none);
+  &:hover,
+  &:focus {
+    background-color: rgb(68, 68, 68);
+    color: rgba(255, 255, 255, 1);
+  }
+  &:active {
+    background-color: rgb(68, 68, 68);
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

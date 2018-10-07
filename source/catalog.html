@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -41,24 +42,30 @@
         <div class="wrapper">
           <ul class="catalog__list">
             <li class="catalog__item">
-              <img src="http://placehold.it/150x100" alt="Фотография товара">
-              <p class="catalog__name">Зайчик-попрыгайчик</p>
-              <p class="catalog__description">Рост 30 см, вес 200 г</p>
-              <p class="catalog__price">1 200 руб.</p>
+              <img src="../img/photo-hare-mobile@1x.jpg" alt="Фотография товара">
+              <div class="catalog__info">
+                <p class="catalog__name">Зайчик-попрыгайчик</p>
+                <p class="catalog__description">Рост 30 см, вес 200 г</p>
+                <p class="catalog__price">1 200 руб.</p>
+              </div>
             </li>
 
             <li class="catalog__item">
-              <img src="http://placehold.it/150x100" alt="Фотография товара">
-              <p class="catalog__name">Корзинка для белья</p>
-              <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
-              <p class="catalog__price">690 руб.</p>
+              <img src="../img/photo-bowl-mobile@1x.jpg" alt="Фотография товара">
+              <div class="catalog__info">
+                <p class="catalog__name">Корзинка для белья</p>
+                <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
+                <p class="catalog__price">690 руб.</p>
+              </div>
             </li>
 
             <li class="catalog__item">
-              <img src="http://placehold.it/150x100" alt="Фотография товара">
-              <p class="catalog__name">Большая корзинка для игрушек</p>
-              <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
-              <p class="catalog__price">1 500 руб.</p>
+              <img src="../img/photo-toys-mobile@1x.jpg" alt="Фотография товара">
+              <div class="catalog__info">
+                <p class="catalog__name">Большая корзинка для игрушек</p>
+                <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+                <p class="catalog__price">1 500 руб.</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -66,12 +73,14 @@
 
       <div class="making">
         <div class="wrapper">
-          <div class="making__title">
-            <p class="making__title-text">Процесс производства</p>
+          <div class="making__info">
+            <div class="making__title">
+              <p class="making__title-text">Процесс производства</p>
+            </div>
+            <img src="../img/video-mobile@1x.jpg" alt="Видео процесса производства">
+            <p class="making__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="making__order button" href="form.html">СДЕЛАТЬ ЗАКАЗ</a>
           </div>
-          <img src="http://placehold.it/150x100" alt="Видео процесса производства">
-          <p class="making__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="making__order button" href="form.html">ЗАКАЗАТЬ</a>
         </div>
       </div>
     </main>
