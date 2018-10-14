@@ -1,6 +1,10 @@
 .page-footer {
   background-color: rgb(241, 241, 241);
-  margin: 0 30px;
+  margin: 0 auto;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .social__list {
@@ -16,4 +20,34 @@
 .copyright__text {
   @include font-options(19px, 18px, 700, #000000, none);
   margin: 26px 28px 30px 30px;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social {
+  width: 200px;
+}
+
+.page-footer__copyright {
+  width: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    display: block;
+    width: 120px;
+  }
+
+  .page-footer {
+    flex-direction: row;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 1250px;
+  }
 }
