@@ -115,24 +115,24 @@
 
 @media (min-width: $desktop-width) {
   .mishkashop {
-    width: 1250px;
+    width: 1150px;
   }
 
   .mishkashop__image {
     background-image: url("../img/hero-desktop@1x.jpg");
-    width: 1250px;
+    width: 1150px;
   }
 
   .mishkashop__title {
     @include font-options(53px, 57px, 700, #000000, none);
     width: 610px;
-    margin-left: 100px;
+    margin-left: 50px;
     padding: 160px 215px;
   }
 
   .mishkashop__list {
     width: 1050px;
-    margin: -110px 0 0 100px;
+    margin: -110px 0 0 50px;
   }
 
   .mishkashop__item {

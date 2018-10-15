@@ -99,7 +99,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    margin: 0 100px;
+    margin: 0 50px;
     width: 1050px;
   }
 
@@ -134,5 +134,10 @@
   .site-list__link--new,
   .site-list__link--sale {
     @include font-options(15px, 24px, 700, #000000, none);
+  }
+
+  .site-list__link--catalog,
+  .site-list__link--knitting {
+    @include font-options(17px, 24px, 700, #000000, none);
   }
 }

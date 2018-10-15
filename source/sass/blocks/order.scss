@@ -1,12 +1,54 @@
-.order__title {
-  background-color: rgb(241, 241, 241);
+.order {
+  margin: 0 auto;
+  width: 320px;
+}
 
+.order__title {
   @include font-options(27px, 30px, 700, #000000, none);
-  padding: 70px 30px;
-  margin: 0 30px;
+  background-color: rgb(241, 241, 241);
+  display: block;
+  width: 320px;
+  padding: 70px 0;
+  text-align: center;
 }
 
 .order__invite {
   @include font-options(13px, 24px, 400, rgb(68, 68, 68), none);
   margin: 24px 30px 20px 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .order {
+    width: 768px;
+    margin-top: -122px;
+  }
+
+  .order__title {
+    @include font-options(43px, 50px, 700, #000000, none);
+    width: 768px;
+    padding: 100px 0;
+  }
+
+  .order__invite {
+    @include font-options(17px, 30px, 400, rgb(68, 68, 68), none);
+    padding-right: 53px;
+    margin: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order {
+    width: 1150px;
+  }
+
+  .order__title {
+    @include font-options(53px, 57px, 700, #000000, none);
+    width: 1150px;
+  }
+
+  .order__invite {
+    padding-left: 175px;
+    width: 700px;
+    margin: 0 50px;
+  }
 }

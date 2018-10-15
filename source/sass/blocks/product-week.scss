@@ -38,25 +38,8 @@
 }
 
 .product-week__order {
-  display: block;
   padding: 15px 0;
-  border: 2px solid rgb(68, 68, 68);
-  text-decoration: none;
   width: 259px;
-  text-align: center;
-
-  @include font-options(17px, 20px, 700, rgb(68, 68, 68), none);
-
-  &:hover,
-  &:focus {
-    background-color: rgb(68, 68, 68);
-    color: rgba(255, 255, 255, 1);
-  }
-
-  &:active {
-    background-color: rgb(68, 68, 68);
-    color: rgba(255, 255, 255, 0.3);
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -118,7 +101,7 @@
   .product-week {
     margin: 130px auto 50px auto;
     width: 1050px;
-    padding: 0 100px;
+    padding: 0 50px;
   }
 
   .product-week__block-title {
@@ -152,7 +135,7 @@
   }
 
   .product-week__price {
-    margin-left: 250px;
+    margin-left: 120px;
   }
 
   .product-week__photo {
