@@ -1,6 +1,14 @@
+.making {
+  margin: 0 auto;
+  width: 320px;
+}
+
 .making__info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   border: 1px solid rgb(236, 236, 236);
-  margin: 30px 30px 60px 30px;
+  margin: 30px 30px 13px 30px;
 
   &:hover,
   &:focus {
@@ -19,15 +27,13 @@
 
 .making__description {
   @include font-options(13px, 24px, 400, #000000, none);
-  padding: 17px 30px;
+  padding: 17px 35px;
 }
 
 .making__order {
-  display: block;
-  margin: 0 30px 35px 30px;
-  padding: 15px 30px;
-  border: 2px solid rgb(68, 68, 68);
-  text-decoration: none;
+  width: 192px;
+  margin: 0 auto 35px 35px;
+  padding: 15px 0;
 
   @include font-options(17px, 16px, 700, #000000, none);
 
@@ -40,5 +46,60 @@
   &:active {
     background-color: rgb(68, 68, 68);
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .making {
+    width: 768px;
+  }
+
+  .making__info {
+    margin: 50px;
+  }
+
+  .making__video {
+    order: -1;
+  }
+
+  .making__title {
+    @include font-options(20px, 24px, 700, #000000, none);
+    padding: 10px 45px;
+  }
+
+  .making__description,
+  .making__order {
+    margin: 0 45px 35px 45px;
+    padding: 15px 0;
+  }
+
+  .making__order {
+    width: 584px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .making {
+    width: 1150px;
+  }
+
+  .making__info {
+    height: 455px;
+  }
+
+  .making__video {
+    width: 682px;
+    height: 455px;
+  }
+
+  .making__title,
+  .making__description,
+  .making__order {
+    width: 230px;
+    margin-left: 80px;
+  }
+
+  .making__title {
+    padding: 10px 0;
   }
 }

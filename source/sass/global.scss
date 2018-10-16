@@ -2,6 +2,9 @@ $tiffany-color: rgba(99, 209, 187, 1);/*#63d1bb*/
 $light-tiffany-color: rgba(99, 209, 187, 0.3);
 $dark-grey-color: rgba(0, 0, 0, 0.6);
 $light-grey-color: rgba(0, 0, 0, 0.3);
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$mobile-width-only: 767px;
 
 @font-face {
   font-family: "Open Sans";
@@ -19,6 +22,34 @@ $light-grey-color: rgba(0, 0, 0, 0.3);
 
 body {
   font-family: "Open Sans", "Arial", sans-serif;
+  min-width: 320px;
+  max-width: 1250px;
+  //margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/**,
+*::before,
+*::after {
+  box-sizing: inherit;
+}*/
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 @mixin font-options ($font-size: 17px, $line-height: 24px, $font-weight: 700, $color: #000000, $text-transform: none) {
@@ -27,4 +58,19 @@ body {
   font-weight: $font-weight;
   color: $color;
   text-transform: $text-transform;
+}
+
+@mixin margins {
+  margin-left: 30px;
+  margin-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }

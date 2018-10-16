@@ -17,10 +17,15 @@
 
 .form-order__item {
   @include font-options(17px, 18px, 400, rgba(68, 68, 68, 0.3), none);
+  box-sizing: border-box;
+  width: 260px;
+  border: 0;
+  border-bottom: 2px solid #000000;
 }
 
 .form-order__item--additionally {
   padding: 10px;
+  border: 2px solid #000000;
 }
 
 .form-order__required-fields {
@@ -30,6 +35,8 @@
 
 .form-order__send {
   display: block;
+  width: 260px;
+  box-sizing: border-box;
   margin: 30px 30px 55px 30px;
   padding: 15px 30px;
   border: 2px solid rgb(68, 68, 68);
@@ -46,5 +53,109 @@
   &:active {
     background-color: rgb(68, 68, 68);
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-order {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-order__title {
+    display: block;
+    box-sizing: border-box;
+    width: 167px;
+    margin: 20px 0 60px 0;
+  }
+
+  .form-order__group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 668px;
+    margin: 0 50px;
+  }
+
+  .form-order__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-order__wrapper,
+  .form-order__phone,
+  .form-order__email {
+    width: 501px;
+  }
+
+  .form-order__type,
+  .form-order__color,
+  .form-order__name,
+  .form-order__surname,
+  .form-order__middle-name,
+  .form-order__phone,
+  .form-order__email,
+  .form-order__additionally {
+    @include font-options(17px, 18px, 700, #000000, none);
+    margin: 20px 0;
+  }
+
+  .form-order__type {
+    width: 501px;
+  }
+
+  .form-order__color {
+    width: 240px;
+  }
+
+  .form-order__required-fields {
+    display: block;
+    width: 315px;
+    margin: 20px 50px 20px auto;
+    text-align: right;
+    order: 1;
+  }
+
+  .form-order__send {
+    width: 230px;
+    margin: 20px 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-order__title {
+    width: 175px;
+    padding-left: 65px;
+  }
+
+  .form-order__group {
+    width: 1050px;
+  }
+
+  .form-order__wrapper,
+  .form-order__phone,
+  .form-order__email {
+    width: 875px;
+  }
+
+  .form-order__name,
+  .form-order__surname,
+  .form-order__middle-name,
+  .form-order__additionally,
+  .form-order__phone,
+  .form-order__email {
+    box-sizing: border-box;
+    width: 700px;
+    margin-right: 175px;
+  }
+
+  .form-order__send {
+    margin: 20px 0 20px 225px;
+  }
+
+  .form-order__required-fields {
+    margin: 20px 225px 20px auto;
   }
 }

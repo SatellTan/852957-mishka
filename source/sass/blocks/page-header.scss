@@ -1,8 +1,27 @@
-.page-header__logo {
-  text-decoration: none;
+.page-header {
+  padding: 0;
+  margin: 0 auto;
+  width: 320px;
 }
 
-.page-header__logo-block {
-  padding: 29px 45px;
-  border-bottom: 1px solid rgb(236, 236, 236);
+.page-header__toggle {
+  display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header__toggle {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1150px;
+  }
 }
