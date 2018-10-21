@@ -9,11 +9,15 @@
   </head>
   <body>
     <header class="page-header">
-      <button class="page-header__toggle" type="button">Открыть меню</button>
+      <button class="page-header__toggle visually-hidden" type="button">Открыть меню</button>
       <ul class="site-list">
-        <li class="site-list__item site-list__item-logo">
-          <a class="site-list__logo" href="index.html">
-            <img class="site-list__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Mishka shop">
+        <li class="site-list__item site-list__item-logo  site-list__link-logo">
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="../img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+              <img class="site-list__logo" src="../img/logo-mobile.svg" width="86" height="35" alt="Mishka shop»">
+            </picture>
           </a>
         </li>
         <li class="site-list__item site-list__item--catalog">
@@ -23,7 +27,9 @@
           <a class="site-list__link site-list__link--knitting" href="form.html">Вязание на заказ</a>
         </li>
         <li class="site-list__item site-list__item--search" >
-          <a class="site-list__link" href="#">Поиск по сайту</a>
+          <a class="site-list__link" href="#">
+            <span class="site-list__search-text">Поиск по сайту</span>
+          </a>
         </li>
         <li class="site-list__item site-list__item--basket">
           <a class="site-list__link" href="#">Корзина:
@@ -48,7 +54,7 @@
           <h1 class="order__title">Вязание на заказ</h1>
           <p class="order__invite">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <form class="form-order" action="https://echo.htmlacademy.ru" method="post">
-            <div class="form-order__group">
+            <div class="form-order__group form-order__group--type">
               <span class="form-order__title">ТИП</span>
               <div class="form-order__wrapper">
                 <div class="form-order__type">
@@ -61,7 +67,7 @@
                 </div>
               </div>
             </div>
-            <div class="form-order__group">
+            <div class="form-order__group form-order__group--color">
               <span class="form-order__title">ЦВЕТ</span>
               <div class="form-order__wrapper">
                 <div class="form-order__color">
@@ -90,7 +96,7 @@
                 </div>
               </div>
             </div>
-            <div class="form-order__group">
+            <div class="form-order__group form-order__group--name">
               <span class="form-order__title">ФИО</span>
               <div class="form-order__wrapper">
                 <div class="form-order__name">
@@ -107,20 +113,18 @@
                 </div>
               </div>
             </div>
-            <div class="form-order__group">
-              <span class="form-order__title">ТЕЛ</span>
+            <div class="form-order__group form-order__group--contacts">
+              <span class="form-order__title form-order__title--phone">ТЕЛ</span>
               <div class="form-order__phone">
                 <input class="form-order__item form-order__item--phone" type="tel" name="phone" id="phone" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               </div>
-            <!--</div>
-            <div class="form-order__group">-->
-              <span class="form-order__title">E-MAIL</span>
+              <span class="form-order__title form-order__title--email">E-MAIL</span>
               <div class="form-order__email">
                 <input class="form-order__item form-order__item--email" type="email" name="email" id="email" value="" placeholder="Ваш Email*" required>
               </div>
             </div>
-            <div class="form-order__group">
-              <span class="form-order__title">ДОП</span>
+            <div class="form-order__group form-order__group--additionally">
+              <span class="form-order__title form-order__title--additionally">ДОП</span>
               <div class="form-order__additionally">
                 <textarea class="form-order__item form-order__item--additionally" name="additionally" id="additionally" cols="25" rows="5" value="" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
