@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   border: 1px solid rgb(236, 236, 236);
-  margin: 30px 30px 13px 30px;
+  margin: 30px 30px 60px 30px;
 
   &:hover,
   &:focus {
@@ -22,17 +22,32 @@
 
 .making__title {
   @include font-options(17px, 24px, 700, #000000, none);
-  padding: 10px 30px;
+  padding: 6px 0 8px 0;
+  padding-left: 90px;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 32px;
+    top: 28px;
+    left: 32px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
 }
 
 .making__description {
   @include font-options(13px, 24px, 400, #000000, none);
-  padding: 17px 35px;
+  padding: 14px 35px 11px 34px;
 }
 
 .making__order {
   width: 192px;
-  margin: 0 auto 35px 35px;
+  margin: 0 auto 30px 34px;
   padding: 15px 0;
 
   @include font-options(17px, 16px, 700, #000000, none);
@@ -49,38 +64,83 @@
   }
 }
 
+.making__video {
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 102px;
+    height: 78px;
+    top: 36px;
+    left: 80px;
+    background-image: url("../img/icon-play.svg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+
+    &:hover,
+    &:focus {
+      width: 122px;
+      height: 94px;
+    }
+
+    &:active {
+      width: 82px;
+      height: 62px;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .making {
     width: 768px;
+    margin: 0 auto 64px auto;
   }
 
   .making__info {
-    margin: 50px;
+    margin: 0 50px;
   }
 
   .making__video {
+    &::before {
+      top: 188px;
+      left: 282px;
+    }
     order: -1;
   }
 
   .making__title {
     @include font-options(20px, 24px, 700, #000000, none);
-    padding: 10px 45px;
+    padding: 18px 106px 0 106px;
+
+    &::before {
+      top: 34px;
+      left: 42px;
+    }
   }
 
   .making__description,
   .making__order {
-    margin: 0 45px 35px 45px;
+    margin: 0 40px 18px 40px;
     padding: 15px 0;
+  }
+
+  .making__description {
+    @include font-options(15px, 30px, 400, #000000, none);
   }
 
   .making__order {
     width: 584px;
+    margin-bottom: 44px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .making {
     width: 1150px;
+    margin-top: 4px;
+    margin-bottom: 102px;
   }
 
   .making__info {
@@ -90,16 +150,32 @@
   .making__video {
     width: 682px;
     height: 455px;
+
+    &::before {
+      top: 188px;
+      left: 290px;
+    }
   }
 
   .making__title,
   .making__description,
   .making__order {
     width: 230px;
-    margin-left: 80px;
+    margin-left: 62px;
   }
 
   .making__title {
+    margin: 64px 0 0 62px;
     padding: 10px 0;
+
+    &::before {
+      top: -24px;
+      left: 0;
+    }
+  }
+
+  .making__description {
+    margin: 4px 40px 46px 62px;
+    padding: 0;
   }
 }

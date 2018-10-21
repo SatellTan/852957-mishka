@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: rgb(241, 241, 241);
+  background-color: $bg-grey-color;
   margin: 0 auto;
   width: 320px;
   display: flex;
@@ -10,7 +10,7 @@
 .social__list {
   list-style: none;
   padding: 0;
-  margin: 30px;
+  margin: 15px 30px;
 }
 
 .social__link {
@@ -32,6 +32,7 @@
 
 .page-footer__copyright {
   width: 200px;
+  padding: 21px 37px;
 }
 
 @media (min-width: $tablet-width) {

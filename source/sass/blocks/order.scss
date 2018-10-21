@@ -5,28 +5,44 @@
 
 .order__title {
   @include font-options(27px, 30px, 700, #000000, none);
-  background-color: rgb(241, 241, 241);
+  background-color: $bg-grey-color;
   display: block;
   width: 320px;
-  padding: 70px 0;
+  padding: 70px 0 76px 0;
   text-align: center;
+  margin: 0;
 }
 
 .order__invite {
   @include font-options(13px, 24px, 400, rgb(68, 68, 68), none);
-  margin: 24px 30px 20px 30px;
+  margin: 22px 30px;
 }
 
 @media (min-width: $tablet-width) {
   .order {
     width: 768px;
-    margin-top: -122px;
+    margin-top: -60px;
   }
 
   .order__title {
     @include font-options(43px, 50px, 700, #000000, none);
     width: 768px;
-    padding: 100px 0;
+    padding: 96px 0;
+    margin-bottom: 58px;
+    position: relative;
+    z-index: -1;
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 24px;
+      width: 768px;
+      bottom: 0;
+      left: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: auto 100%;
+    }
   }
 
   .order__invite {
@@ -44,6 +60,16 @@
   .order__title {
     @include font-options(53px, 57px, 700, #000000, none);
     width: 1150px;
+    padding: 96px 0 120px 0;
+    margin-bottom: 104px;
+
+    &::after {
+      height: 34px;
+      width: 1150px;
+      bottom: -2px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: auto 100%;
+    }
   }
 
   .order__invite {
