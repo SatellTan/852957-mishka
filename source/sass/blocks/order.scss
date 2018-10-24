@@ -1,32 +1,25 @@
-.order {
-  margin: 0 auto;
-  width: 320px;
-}
-
 .order__title {
   @include font-options(27px, 30px, 700, #000000, none);
   background-color: $bg-grey-color;
   display: block;
-  width: 320px;
   padding: 70px 0 76px 0;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .order__invite {
   @include font-options(13px, 24px, 400, rgb(68, 68, 68), none);
-  margin: 22px 30px;
+  width: 260px;
+  margin: 22px auto 4px auto;
 }
 
 @media (min-width: $tablet-width) {
   .order {
-    width: 768px;
     margin-top: -60px;
   }
 
   .order__title {
     @include font-options(43px, 50px, 700, #000000, none);
-    width: 768px;
     padding: 96px 0;
     margin-bottom: 58px;
     position: relative;
@@ -37,44 +30,37 @@
       position: absolute;
       content: "";
       height: 24px;
-      width: 768px;
+      width: 100%;
       bottom: 0;
       left: 0;
-      background-image: url("../img/bg-zigzag-fill.svg");
+      background: url("../img/bg-zigzag-fill.svg") repeat-x;
       background-size: auto 100%;
+      background-position: bottom -4px left -8px;
     }
   }
 
   .order__invite {
     @include font-options(17px, 30px, 400, rgb(68, 68, 68), none);
     padding-right: 53px;
-    margin: 0 50px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .order {
-    width: 1150px;
-  }
-
   .order__title {
     @include font-options(53px, 57px, 700, #000000, none);
-    width: 1150px;
     padding: 96px 0 120px 0;
     margin-bottom: 104px;
 
     &::after {
       height: 34px;
-      width: 1150px;
       bottom: -2px;
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-size: auto 100%;
     }
   }
 
   .order__invite {
     padding-left: 175px;
     width: 700px;
-    margin: 0 50px;
+    margin: 0 auto;
   }
 }

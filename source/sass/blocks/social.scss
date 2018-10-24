@@ -1,0 +1,28 @@
+.social {
+  margin: 26px auto 27px auto;
+  padding-top: 24px;
+}
+
+.social__list {
+  list-style: none;
+  width: 141px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+
+}
+
+.social__link {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

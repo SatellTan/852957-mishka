@@ -1,3 +1,8 @@
+.form-order {
+  //width: 100%;
+  margin: 0 auto;
+}
+
 .form-order__title {
   @include font-options(17px, 16px, 700, $tiffany-color, none);
   margin: 20px 30px;
@@ -7,7 +12,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 13px;
+      top: 8px;
       left: 62px;
       width: 198px;
       height: 1px;
@@ -70,7 +75,7 @@
 }
 
 .form-order__additionally {
-  margin: 14px 0 4px 0;
+  margin: 14px 30px 4px 30px;
 }
 
 .form-order__item--type,
@@ -180,7 +185,7 @@
   box-sizing: border-box;
   width: 260px;
   min-height: 142px;
-  margin: 10px 0 10px 30px;
+  margin: 10px auto 10px auto;
   padding: 13px;
   border: 2px solid #000000;
   resize: none;
@@ -188,19 +193,19 @@
 
 .form-order__required-fields {
   @include font-options(14px, 16px, 400, rgb(68, 68, 68), none);
-  margin: 0 30px;
+  width: 260px;
 }
 
 .form-order__send {
   @include font-options(17px, 16px, 700, rgb(68, 68, 68), none);
   width: 260px;
-  margin: 30px 30px 55px 30px;
+  margin: 30px auto 55px auto;
   padding: 15px 30px;
   background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
-  .form-order {
+  .wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -242,14 +247,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 768px;
+    //width: 768px;
     padding: 32px 50px 12px 50px;
+    margin: 0 auto;
     margin-top: 6px;
   }
 
-  .form-order__group:nth-child(even) {
+  /*.form-order__group--color,
+  .form-order__group--contacts {
+    width: 100%;
+    margin: 6px auto 0 auto;
     background-color: $bg-grey-color;
-  }
+  }*/
 
   .form-order__wrapper {
     display: flex;
@@ -359,7 +368,7 @@
   }
 
   .form-order__title--additionally {
-    margin: 0;
+    margin: 0 auto;
     padding-top: 30px;
   }
 
@@ -379,7 +388,17 @@
 
   .form-order__send {
     width: 230px;
-    margin: 20px 50px 50px 50px;
+    margin: 20px auto 50px auto;
+  }
+
+  .form-order__group--color,
+  .form-order__group--contacts {
+    //width: 100%;
+    //width: 800px;
+    //margin: 0 auto;
+
+    //margin: 6px auto 0 auto;
+    background-color: $bg-grey-color;
   }
 }
 
@@ -390,7 +409,7 @@
   }
 
   .form-order__group {
-    width: 1150px;
+    //width: 1150px;
     padding: 50px;
   }
 
@@ -444,7 +463,8 @@
     }
   }
 
-  .form-order__group--contacts {
+  //.form-order__group--contacts {
+  .form-order__contacts-wrapper {
     padding: 37px 50px 10px 50px;
   }
 
@@ -458,10 +478,12 @@
   }
 
   .form-order__send {
-    margin: 20px 0 48px 225px;
+    margin: 20px auto 48px auto;
+    //padding-left: 225px;
   }
 
   .form-order__required-fields {
-    margin: 20px 225px 20px auto;
+    margin: 20px auto 20px auto;
+    padding-right: 225px;
   }
 }

@@ -1,0 +1,36 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 14px;
+  width: 182px;
+}
+
+.copyright__htmlacademy {
+  padding-top: 4px;
+  fill: $tiffany-color;
+}
+
+.copyright__text {
+  @include font-options(19px, 18px, 700, #000000, none);
+  padding-top: 10px;
+}
+
+.copyright__link {
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    /*.copyright__text {
+      opacity: 0.3;
+    }*/
+  }
+}
+
+/*.copyright__link:active + .copyright__text {
+  opacity: 0.3;
+}*/
