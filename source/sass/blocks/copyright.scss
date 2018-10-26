@@ -2,16 +2,7 @@
   margin: 0 auto;
 }
 
-.copyright__link {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 0 auto;
-  width: 182px;
-}
-
 .copyright__htmlacademy {
-  //margin-top: -4px;
   fill: $tiffany-color;
 }
 
@@ -21,6 +12,11 @@
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 182px;
   text-decoration: none;
 
   &:hover,

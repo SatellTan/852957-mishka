@@ -178,10 +178,6 @@
   }
 }
 
-.form-order__item--phone {
-  @include font-options(19px, 18px, 400, #000000, none);
-}
-
 .form-order__item--phone,
 .form-order__item--email {
   padding-right: 40px;
@@ -191,7 +187,7 @@
 .form-order__icon-mail {
   position: absolute;
   right: 6px;
-  top : 14px;
+  top: 14px;
   opacity: 0.2;
 }
 
@@ -201,6 +197,8 @@
 }
 
 .form-order__item--phone {
+  @include font-options(19px, 18px, 400, #000000, none);
+
   &:hover,
   &:focus,
   &:active {
@@ -397,12 +395,12 @@
 
   .form-order__icon-phone {
     right: 26px;
-    top : 14px;
+    top: 14px;
   }
 
   .form-order__icon-mail {
     right: 22px;
-    top : 24px;
+    top: 24px;
   }
 
   .form-order__type {
@@ -491,12 +489,12 @@
 
   .form-order__icon-phone {
     right: 148px;
-    top : 14px;
+    top: 14px;
   }
 
   .form-order__icon-mail {
     right: 144px;
-    top : 24px;
+    top: 24px;
   }
 
   .form-order__wrapper {
