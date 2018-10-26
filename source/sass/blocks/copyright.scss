@@ -1,0 +1,41 @@
+.copyright {
+  margin: 0 auto;
+}
+
+.copyright__htmlacademy {
+  fill: $tiffany-color;
+}
+
+.copyright__text {
+  @include font-options(19px, 18px, 700, #000000, none);
+  align-self: center;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 182px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .copyright__text {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin: 0;
+    padding-top: 5px;
+  }
+}

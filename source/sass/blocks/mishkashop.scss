@@ -1,7 +1,8 @@
 .mishkashop {
   margin: 0 auto;
-  width: 320px;
+  //width: 320px;
   border-top: 1px solid rgb(236, 236, 236);
+  background-color: rgb(250, 250, 250);
 }
 
 .mishkashop__image {
@@ -16,6 +17,7 @@
   }
   min-height: 283px;
   width: 320px;
+  margin: 0 auto;
   padding-top: 0;
   margin-bottom: 22px;
 }
@@ -27,6 +29,11 @@
   padding-top: 70px;
   margin-left: 30px;
   text-align: center;
+}
+
+.mishkashop__group {
+  margin: 0 auto;
+  width: 320px;
 }
 
 .mishkashop__list {
@@ -132,7 +139,7 @@
 
 @media (min-width: $tablet-width) {
   .mishkashop {
-    width: 768px;
+    //width: 768px;
     margin-top: -58px;
     position: relative;
     z-index: -1;
@@ -142,10 +149,10 @@
       position: absolute;
       content: "";
       height: 24px;
-      width: 768px;
+      width: 100%;
       bottom: -10px;
       left: 0;
-      background: url("../img/bg-zigzag-fill.svg");
+      background: url("../img/bg-zigzag-fill.svg") repeat-x;
       background-size: auto 100%;
     }
   }
@@ -169,6 +176,10 @@
     width: 498px;
     margin: 0 auto;
     padding: 152px 85px;
+  }
+
+  .mishkashop__group {
+    width: 768px;
   }
 
   .mishkashop__list {
@@ -200,15 +211,16 @@
 
 @media (min-width: $desktop-width) {
   .mishkashop {
-    width: 1150px;
+    //width: 1150px;
 
     &::after {
       height: 34px;
-      width: 1150px;
+      width: 100%;
       bottom: -20px;
-      left: 0;
-      background: url("../img/bg-zigzag-fill.svg");
-      background-size: auto 100%;
+      left: 0x;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x;
+      //background-size: cover;
+      //background-position: bottom -20px left 0;
     }
   }
 
@@ -228,6 +240,10 @@
     width: 620px;
     margin: 0 auto;
     padding: 152px 0;
+  }
+
+  .mishkashop__group {
+    width: 1150px;
   }
 
   .mishkashop__list {
