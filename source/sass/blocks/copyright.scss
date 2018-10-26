@@ -1,22 +1,28 @@
 .copyright {
+  margin: 0 auto;
+}
+
+.copyright__link {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin: 0 auto;
-  padding-top: 14px;
   width: 182px;
 }
 
 .copyright__htmlacademy {
-  padding-top: 4px;
+  //margin-top: -4px;
   fill: $tiffany-color;
 }
 
 .copyright__text {
   @include font-options(19px, 18px, 700, #000000, none);
-  padding-top: 10px;
+  align-self: center;
 }
 
 .copyright__link {
+  text-decoration: none;
+
   &:hover,
   &:focus {
     fill: #46c1ae;
@@ -25,12 +31,15 @@
   &:active {
     opacity: 0.3;
 
-    /*.copyright__text {
+    .copyright__text {
       opacity: 0.3;
-    }*/
+    }
   }
 }
 
-/*.copyright__link:active + .copyright__text {
-  opacity: 0.3;
-}*/
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin: 0;
+    padding-top: 5px;
+  }
+}

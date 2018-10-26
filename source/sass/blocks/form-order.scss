@@ -1,5 +1,4 @@
 .form-order {
-  //width: 100%;
   margin: 0 auto;
 }
 
@@ -61,11 +60,13 @@
 }
 
 .form-order__phone {
+  position: relative;
   margin-top: 0;
   margin-bottom: 28px;
 }
 
 .form-order__email {
+  position: relative;
   margin-top: 6px;
   margin-bottom: 32px;
 }
@@ -181,6 +182,46 @@
   @include font-options(19px, 18px, 400, #000000, none);
 }
 
+.form-order__item--phone,
+.form-order__item--email {
+  padding-right: 40px;
+}
+
+.form-order__icon-phone,
+.form-order__icon-mail {
+  position: absolute;
+  right: 6px;
+  top : 14px;
+  opacity: 0.2;
+}
+
+.form-order__icon-mail {
+  right: 4px;
+  top: 10px;
+}
+
+.form-order__item--phone {
+  &:hover,
+  &:focus,
+  &:active {
+    & + .form-order__icon-phone {
+      opacity: 1;
+      fill: $tiffany-color;
+    }
+  }
+}
+
+.form-order__item--email {
+  &:hover,
+  &:focus,
+  &:active {
+    & + .form-order__icon-mail {
+      opacity: 1;
+      fill: $tiffany-color;
+    }
+  }
+}
+
 .form-order__item--additionally {
   box-sizing: border-box;
   width: 260px;
@@ -194,6 +235,7 @@
 .form-order__required-fields {
   @include font-options(14px, 16px, 400, rgb(68, 68, 68), none);
   width: 260px;
+  margin: 0 auto;
 }
 
 .form-order__send {
@@ -209,6 +251,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0;
   }
 
   .form-order__item--type + label::before {
@@ -247,18 +290,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    //width: 768px;
     padding: 32px 50px 12px 50px;
     margin: 0 auto;
     margin-top: 6px;
   }
-
-  /*.form-order__group--color,
-  .form-order__group--contacts {
-    width: 100%;
-    margin: 6px auto 0 auto;
-    background-color: $bg-grey-color;
-  }*/
 
   .form-order__wrapper {
     display: flex;
@@ -357,10 +392,29 @@
   .form-order__item--phone,
   .form-order__item--email {
     background-color: $bg-grey-color;
+    padding-right: 70px;
+  }
+
+  .form-order__icon-phone {
+    right: 26px;
+    top : 14px;
+  }
+
+  .form-order__icon-mail {
+    right: 22px;
+    top : 24px;
   }
 
   .form-order__type {
     width: 501px;
+  }
+
+  .form-order__group--type {
+    margin-bottom: 6px;
+  }
+
+  .form-order__group--contacts {
+    padding: 40px 0 10px 0;
   }
 
   .form-order__color {
@@ -380,7 +434,7 @@
     @include font-options(17px, 30px, 400, rgb(68, 68, 68), none);
     display: block;
     width: 315px;
-    margin: 20px 50px 20px auto;
+    margin: 30px 0 20px auto;
     padding-top: 10px;
     text-align: right;
     order: 1;
@@ -388,16 +442,11 @@
 
   .form-order__send {
     width: 230px;
-    margin: 20px auto 50px auto;
+    margin: 30px auto 40px 0;
   }
 
   .form-order__group--color,
   .form-order__group--contacts {
-    //width: 100%;
-    //width: 800px;
-    //margin: 0 auto;
-
-    //margin: 6px auto 0 auto;
     background-color: $bg-grey-color;
   }
 }
@@ -409,7 +458,6 @@
   }
 
   .form-order__group {
-    //width: 1150px;
     padding: 50px;
   }
 
@@ -427,26 +475,46 @@
 
   .form-order__phone,
   .form-order__email {
-    width: 875px;
+    width: 700px;
+    margin-right: auto;
+    flex-basis: 80%;
 
     .form-order__item {
       width: 700px;
     }
   }
 
+  .form-order__item--phone,
+  .form-order__item--email {
+    padding-right: 50px;
+  }
+
+  .form-order__icon-phone {
+    right: 148px;
+    top : 14px;
+  }
+
+  .form-order__icon-mail {
+    right: 144px;
+    top : 24px;
+  }
+
   .form-order__wrapper {
     width: 765px;
+    padding-right: 110px;
   }
 
   .form-order__name,
   .form-order__surname,
   .form-order__middle-name,
-  .form-order__additionally,
-  .form-order__phone,
-  .form-order__email {
+  .form-order__additionally {
     box-sizing: border-box;
     width: 765px;
     padding-right: 64px;
+  }
+
+  .form-order__additionally {
+    margin-right: 110px;
   }
 
   .form-order__name,
@@ -463,13 +531,22 @@
     }
   }
 
-  //.form-order__group--contacts {
   .form-order__contacts-wrapper {
     padding: 37px 50px 10px 50px;
   }
 
+  .form-order__group--contacts {
+    padding: 7px 0 0 0;
+  }
+
   .form-order__group--additionally {
     padding: 30px 50px 10px 50px;
+  }
+
+  .form-order__title--additionally {
+    width: 50px;
+    padding-left: 6px;
+    margin-left: 60px;
   }
 
   .form-order__item--additionally {
@@ -478,12 +555,12 @@
   }
 
   .form-order__send {
-    margin: 20px auto 48px auto;
-    //padding-left: 225px;
+    margin: 28px auto 38px 174px;
   }
 
   .form-order__required-fields {
     margin: 20px auto 20px auto;
-    padding-right: 225px;
+    padding-right: 94px;
+    padding-top: 20px;
   }
 }

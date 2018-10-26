@@ -32,7 +32,7 @@
     content: "";
     width: 32px;
     height: 32px;
-    top: 28px;
+    top: 30px;
     left: 32px;
     background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
@@ -66,31 +66,32 @@
 
 .making__video {
   position: relative;
+}
 
-  &::before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 102px;
-    height: 78px;
-    top: 36px;
-    left: 80px;
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
-    background-size: auto 100%;
+.making__video-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
-    &:hover,
-    &:focus {
+  &:hover,
+  &:focus {
+    .making__icon-video-play {
       width: 122px;
       height: 94px;
     }
+  }
 
-    &:active {
+  &:active {
+    .making__icon-video-play {
       width: 82px;
       height: 62px;
+      opacity: 0.3;
     }
   }
 }
+
+
 
 @media (min-width: $tablet-width) {
   .making {

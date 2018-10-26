@@ -10,7 +10,7 @@
 .order__invite {
   @include font-options(13px, 24px, 400, rgb(68, 68, 68), none);
   width: 260px;
-  margin: 22px auto 4px auto;
+  margin: 22px auto 24px auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,7 +41,8 @@
 
   .order__invite {
     @include font-options(17px, 30px, 400, rgb(68, 68, 68), none);
-    padding-right: 53px;
+    width: 668px;
+    padding: 0;
     margin: 0 auto;
   }
 }

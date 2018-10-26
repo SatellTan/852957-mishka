@@ -1,5 +1,5 @@
 .social {
-  margin: 26px auto 27px auto;
+  margin: 26px auto 44px auto;
   padding-top: 24px;
 }
 
@@ -24,5 +24,16 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin: 0;
+    padding: 0;
+    padding-top: 9px;
+    margin-left: 58px;
+    //margin-bottom: 40px;
+
   }
 }
