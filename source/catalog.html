@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' *.mycdn.com 'unsafe-inline';">
     <link rel="preload" href="/fonts/opensans.woff2" as="font">
     <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
@@ -76,7 +77,7 @@
               <div class="catalog__basket">
                 <p class="catalog__price">1 200 руб.</p>
                 <div>
-                  <a class="catalog__icon-cart" href="#">
+                  <a class="catalog__icon-cart js-modal-show" href="#">
                     <svg class="catalog__cart-image" width="21" height="19">
                       <use xlink:href="#icon-cart"></use>
                     </svg>
@@ -104,7 +105,7 @@
               <div class="catalog__basket">
                 <p class="catalog__price">690 руб.</p>
                 <div>
-                  <a class="catalog__icon-cart" href="basket.html">
+                  <a class="catalog__icon-cart js-modal-show" href="#">
                     <svg class="catalog__cart-image" width="21" height="19">
                       <use xlink:href="#icon-cart"></use>
                     </svg>
@@ -132,7 +133,7 @@
               <div class="catalog__basket">
                 <p class="catalog__price">1 500 руб.</p>
                 <div>
-                  <a class="catalog__icon-cart" href="basket.html">
+                  <a class="catalog__icon-cart js-modal-show" href="#">
                     <svg class="catalog__cart-image" width="21" height="19">
                       <use xlink:href="#icon-cart"></use>
                     </svg>
@@ -221,9 +222,35 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal">
+      <form class="modal__window" method="get">
+        <div class="modal__content">
+          <p class="modal__title">ДОБАВИТЬ В КОРЗИНУ</p>
+          <p class="modal__text">Выберите размер:</p>
+          <div class="modal__size-container">
+            <div class="modal__field">
+              <input type="radio" class="modal__radio" id="s" value="s" name="size" checked>
+              <label for="s" class="modal__size">S</label>
+            </div>
+            <div class="modal__field">
+              <input type="radio" class="modal__radio" id="m" value="m" name="size">
+              <label for="m" class="modal__size">M</label>
+            </div>
+            <div class="modal__field">
+              <input type="radio" class="modal__radio" id="l" value="l" name="size">
+              <label for="l" class="modal__size">L</label>
+            </div>
+          </div>
+          <button class="modal__button" type="submit">Добавить</button>
+        </div>
+      </form>
+    </div>
+
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
     <script src="js/picturefill.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
