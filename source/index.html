@@ -105,7 +105,7 @@
             </picture>
           </div>
           <p class="product-week__price">Цена: 990 руб.</p>
-          <a class="product-week__order button" href="#">ЗАКАЗАТЬ</a>
+          <a class="product-week__order button" href="basket.html">ЗАКАЗАТЬ</a>
         </div>
       </section>
 
@@ -222,9 +222,35 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal">
+      <form class="modal__window" method="get">
+        <div class="modal__content">
+          <p class="modal__title">ДОБАВИТЬ В КОРЗИНУ</p>
+          <p class="modal__text">Выберите размер:</p>
+          <div class="modal__size-container">
+            <div class="modal__field">
+              <input type="radio" class="modal__radio" id="s" value="s" name="size" checked>
+              <label for="s" class="modal__size">S</label>
+            </div>
+            <div class="modal__field">
+              <input type="radio" class="modal__radio" id="m" value="m" name="size">
+              <label for="m" class="modal__size">M</label>
+            </div>
+            <div class="modal__field">
+              <input type="radio" class="modal__radio" id="l" value="l" name="size">
+              <label for="l" class="modal__size">L</label>
+            </div>
+          </div>
+          <button class="modal__button" type="submit">Добавить</button>
+        </div>
+      </form>
+    </div>
+
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
     <script src="js/picturefill.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
