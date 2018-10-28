@@ -209,15 +209,12 @@
 
 @media (min-width: $desktop-width) {
   .mishkashop {
-
     &::after {
       height: 34px;
       width: 100%;
       bottom: -20px;
-      left: 0x;
+      left: 0;
       background: url("../img/bg-zigzag-fill.svg") repeat-x;
-      //background-size: cover;
-      //background-position: bottom -20px left 0;
     }
   }
 

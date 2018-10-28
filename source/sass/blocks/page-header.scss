@@ -10,6 +10,10 @@
   display: none;
 }
 
+.site-list__logo:focus {
+  outline: 1px solid rgb(144, 186, 254);
+}
+
 @media (max-width: $mobile-width-only) {
   .page-header__toggle {
     display: block;
@@ -19,6 +23,12 @@
 @media (min-width: $tablet-width) {
   .page-header {
     width: 768px;
+  }
+
+  .site-list__link--search:focus {
+    .site-list__icon-search {
+      outline: 1px solid rgb(144, 186, 254);
+    }
   }
 }
 

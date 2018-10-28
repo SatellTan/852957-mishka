@@ -2,6 +2,8 @@ var modal = document.querySelectorAll(".js-modal-show");
 var popup = document.querySelector(".modal");
 var PopupClose = popup.querySelector(".modal__button");
 
+
+
 if (modal) {
   for (var i = 0; i < modal.length; i++){
     modal[i].addEventListener("click", function (evt) {
