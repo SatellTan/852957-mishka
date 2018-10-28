@@ -1,4 +1,4 @@
-$tiffany-color: rgba(99, 209, 187, 1);/*#63d1bb*/
+$tiffany-color: rgba(99, 209, 187, 1);
 $light-tiffany-color: rgba(99, 209, 187, 0.3);
 $bg-grey-color: rgb(241, 241, 241);
 $dark-grey-color: rgba(0, 0, 0, 0.6);
@@ -26,7 +26,6 @@ $retina-dppx: 1.5dppx;
 body {
   font-family: "Open Sans", "Arial", sans-serif;
   min-width: 320px;
-  //max-width: 1250px;
   padding: 0;
   margin: 0 auto;
 }
@@ -40,12 +39,6 @@ img {
   height: auto;
   display: block;
 }
-
-/**,
-*::before,
-*::after {
-  box-sizing: inherit;
-}*/
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;

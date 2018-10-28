@@ -2,10 +2,16 @@
   padding: 0;
   margin: 0 auto;
   width: 320px;
+  position: relative;
+  z-index: 2;
 }
 
 .page-header__toggle {
   display: none;
+}
+
+.site-list__logo:focus {
+  outline: 1px solid rgb(144, 186, 254);
 }
 
 @media (max-width: $mobile-width-only) {
@@ -17,6 +23,12 @@
 @media (min-width: $tablet-width) {
   .page-header {
     width: 768px;
+  }
+
+  .site-list__link--search:focus {
+    .site-list__icon-search {
+      outline: 1px solid rgb(144, 186, 254);
+    }
   }
 }
 
