@@ -59,12 +59,12 @@
           <h2 class="visually-hidden">Группы каталога</h2>
           <ul class="mishkashop__list">
             <li class="mishkashop__item">
-              <a class="mishkashop__link mishkashop__interior" href="#">
+              <a class="mishkashop__link mishkashop__link--interior" href="#">
                 <span class="mishkashop__interior-text">Предметы интерьера</span>
               </a>
             </li>
             <li class="mishkashop__item">
-              <a class="mishkashop__link mishkashop__toys" href="#">
+              <a class="mishkashop__link mishkashop__link--toys" href="#">
                 <span class="mishkashop__toys-text">Детские игрушки</span>
               </a>
             </li>
@@ -133,9 +133,9 @@
       </section>
 
       <section class="reviews">
-        <div class="reviews__wrapper slider">
+        <div class="reviews__wrapper">
           <h2 class="reviews__title">Отзывы</h2>
-          <div class="reviews__list  slider__list">
+          <div class="reviews__list">
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <div class="reviews__author">
               <p class="reviews__author-name">Анастасия Красильникова</p>
@@ -168,9 +168,9 @@
             <div class="contacts__address-value">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</div>
           </div>
         </div>
-        <div class="contacts__map">
+        <div class="contacts__map-wrapper">
           <iframe class="contacts__map-interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d564.9030953270887!2d30.32249116684878!3d59.938729943544274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1540667760819" width="600" height="450" style="border:0" allowfullscreen></iframe>
-          <picture>
+          <picture class="contacts__map-static">
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
@@ -185,13 +185,11 @@
 
     <footer class="page-footer">
       <div class="wrapper">
-        <div class="page-footer__logo">
-          <a class="page-footer__logo-link" href="#">
-            <svg class="page-footer__logo-image" width="102" height="35"><use xlink:href="#logo-footer"></use></svg>
-            <span class="visually-hidden">Логотип Mishka shop</span>
-          </a>
-        </div>
-        <div class="page-footer__social social">
+        <a class="page-footer__logo" href="#">
+          <svg width="102" height="35"><use xlink:href="#logo-footer"></use></svg>
+          <span class="visually-hidden">Логотип Mishka shop</span>
+        </a>
+        <div class="social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">

@@ -6,13 +6,6 @@
 
 .page-footer__logo {
   display: none;
-}
-
-.page-footer__social {
-  width: 200px;
-}
-
-.page-footer__logo-link {
   text-decoration: none;
 
   &:hover,
@@ -25,14 +18,10 @@
   }
 }
 
-.page-footer__copyright {
-  padding-bottom: 26px;
-}
-
 @media (min-width: $tablet-width) {
   .page-footer {
     padding-top: 50px;
-    padding-bottom: 54px;
+    padding-bottom: 26px;
   }
 
   .page-footer__logo {
@@ -46,14 +35,6 @@
     padding-top: 50px;
     width: 668px;
     padding-bottom: 54px;
-  }
-
-  .page-footer__social {
-    margin: 0;
-  }
-
-  .page-footer__copyright {
-    margin: 0;
   }
 }
 

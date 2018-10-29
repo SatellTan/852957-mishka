@@ -4,6 +4,8 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  position: relative;
+  width: 320px;
 }
 
 .site-list__link {
@@ -85,40 +87,43 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .site-list {
-    position: relative;
-    width: 320px;
-  }
+.site-list__item {
+  position: relative;
+  box-sizing: border-box;
+  padding: 26px 0 28px 75px;
+  padding-left: 75px;
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
 
-  .site-list__item {
-    position: relative;
-    box-sizing: border-box;
-    padding: 26px 0 28px 75px;
-    padding-left: 75px;
-    border-bottom: 1px solid rgb(236, 236, 236);
-  }
+.site-list__item-logo {
+  box-sizing: border-box;
+  padding-top: 22px;
+  padding-left: 116px;
+  padding-bottom: 22px;
+}
 
-  .site-list__item-logo {
-    box-sizing: border-box;
-    padding-top: 22px;
-    padding-left: 116px;
-    padding-bottom: 22px;
-  }
+.site-list__logo {
+  width: 86px;
+  height: 35px;
+}
 
-  .site-list__logo {
-    width: 86px;
-    height: 35px;
-  }
-
-  .site-list__item--new,
-  .site-list__item--sale,
-  .site-list__item--delivery {
-    display: none;
-  }
+.site-list__item--new,
+.site-list__item--sale,
+.site-list__item--delivery {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
+  .page-header::after {
+    content: "";
+    position: absolute;
+    top: 88px;
+    left: 0;
+    width: 768px;
+    height: 1px;
+    background: rgba(68, 68, 68, 0.1);
+  }
+
   .site-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -135,6 +140,7 @@
   .site-list__item {
     position: relative;
     width: 167px;
+    border-bottom: 0;
   }
 
   .site-list__item-logo {
@@ -177,6 +183,7 @@
   }
 
   .site-list__item--delivery {
+    display: block;
     width: 240px;
     margin-left: auto;
     text-align: right;
@@ -194,18 +201,27 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header::after {
+    width: 1150px;
+  }
+
   .site-list {
     margin: 0 50px;
     width: 1050px;
   }
 
   .site-list__item-logo {
-    padding: 9px 0 2px 40px;
+    padding: 9px 0 2px 0;
+    margin-left: 40px;
   }
 
   .site-list__logo {
     width: 149px;
     height: 72px;
+  }
+
+  .site-list__item--catalog {
+    width: 184px;
   }
 
   .site-list__item--catalog,
@@ -235,7 +251,6 @@
   .site-list__item--knitting {
     width: 226px;
     border-left: 1px solid rgb(236, 236, 236);
-    padding-left: 16px;
     text-align: center;
   }
 

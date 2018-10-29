@@ -1,16 +1,21 @@
 .social {
+  width: 260px;
   margin: 26px auto 44px auto;
   padding-top: 24px;
 }
 
 .social__list {
   list-style: none;
-  width: 141px;
+  width: 260px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   padding: 0;
+}
+
+.social__item {
+  margin: 0 20px 0 20px;
 }
 
 .social__link {
@@ -30,7 +35,7 @@
   .social {
     margin: 0;
     padding: 0;
-    padding-top: 9px;
+    margin-top: 8px;
     margin-left: 58px;
   }
 }

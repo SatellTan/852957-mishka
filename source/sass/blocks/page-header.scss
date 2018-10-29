@@ -6,18 +6,8 @@
   z-index: 2;
 }
 
-.page-header__toggle {
-  display: none;
-}
-
 .site-list__logo:focus {
   outline: 1px solid rgb(144, 186, 254);
-}
-
-@media (max-width: $mobile-width-only) {
-  .page-header__toggle {
-    display: block;
-  }
 }
 
 @media (min-width: $tablet-width) {
